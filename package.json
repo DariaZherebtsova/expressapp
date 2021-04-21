@@ -1,6 +1,6 @@
 {
   "name": "expressapp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.1.2"

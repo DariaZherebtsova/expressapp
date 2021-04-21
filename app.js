@@ -8,7 +8,7 @@ app.use("/", function(request, response){
      
   response.render("contact.hbs", {
     width: "300px",
-    height: "200px",
+    height: "220px",
   });
 });
 // начинаем прослушивать подключения на 3000 порту
