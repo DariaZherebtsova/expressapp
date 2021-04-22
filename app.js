@@ -6,7 +6,7 @@ app.set("view engine", "hbs");
 // определяем обработчик для маршрута "/"
 app.use("/", function(request, response){
      
-  response.render("2borders-slash.hbs", {
+  response.render("2borders.hbs", {
     width: "400px",
     height: "220px",
     fio: "Иванов Иван Иванович",
