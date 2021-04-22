@@ -6,10 +6,11 @@ app.set("view engine", "hbs");
 // определяем обработчик для маршрута "/"
 app.use("/", function(request, response){
      
-  response.render("2borders-slash.hbs", {
+  response.render("no-borders.hbs", {
     width: "210px",
     height: "110px",
     fio: "12345678901 23456789012345 67890123456789",
+    type: "предрейсовый",
     reason: "Отклонение АД (156/97)",
     repeat: "Пройти повторно через 20 мин!",
     date: "2020-04-1 20:20:41",
