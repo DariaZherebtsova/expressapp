@@ -1,11 +1,8 @@
 <style>
     .container {
-        {{!-- margin-left: 500px;
-        margin-top: 80px; --}}
         width: {{width}};
         height: {{height}};
         border: 1px solid black;
-        {{!-- vertical-align: middle; --}}
         text-align: center;
     }
     svg {
@@ -14,6 +11,9 @@
         height: {{height}};
     }
     .content {
+        {{!-- font-family: monospace; --}}
+        font-family: sans-serif;
+        font-size: 10;
         position: relative;
         bottom: calc({{height}} - 4px);
         width: calc({{width}} - 10px);
@@ -25,21 +25,18 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    {{!-- .first-line{
-        margin-top: 5px;
-    } --}}
 </style>
 
 <div class="container">
-
     <svg viewbox="0 0 10 10" preserveAspectRatio="none">
         <line x1="0" y1="10" x2="10" y2="0" stroke="black" stroke-width="0.05" />
     </svg>
     <div class="content">
         <div class="first-line"><b>{{fio}}</b></div>
-        <div><b>ПРОШЕЛ</b> {{type}} медосмотр.</div>
-        <div>К исполнению трудовых обязанностей допущен.</div>
+        <div><b>НЕ ДОПУЩЕН</b></div>
         <div>{{date}}</div>
+        <div>{{reason}}</div>
+        <div><ins>{{repeat}}</ins></div>
         <div>{{medic}}</div>
         <div>ЭЦП {{medicEDS}}</div>
     </div>
